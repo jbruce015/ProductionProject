@@ -14,12 +14,12 @@ public class Controller {
         lblOutput.setText("Hello FXML!");
 
     }
-    //Creating an event handler to button click event to print out "Add product"
+    //Creating an event handler to button click event to print out added product
     public void addProduct(javafx.event.ActionEvent actionEvent) {
-        System.out.println("Add Product");
+        System.out.println("Product added");
     }
-    //Creating an event handler to button click event to print out "Record Production"
+    //Creating an event handler to button click event to print out recorded Production
     public void recordProduction(ActionEvent actionEvent) {
-        System.out.println("Record Production");
+        System.out.println("Production recorded");
     }
 }
