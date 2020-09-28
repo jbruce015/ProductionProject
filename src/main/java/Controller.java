@@ -8,7 +8,7 @@ public class Controller {
     @FXML
     private Label lblOutput;
     @FXML
-    private Button addProduct;
+    private Button addProduct, recordProduction;
 
     public void sayHello() {
         lblOutput.setText("Hello FXML!");
