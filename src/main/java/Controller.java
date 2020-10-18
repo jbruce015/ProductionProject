@@ -2,15 +2,32 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+
+import java.sql.*;
+
 
 public class Controller {
+    @FXML
+    private Label lblOutput;
+    @FXML
+    private Button addProduct, recordProduction;
+    @FXML
+    //Creating an event handler to button click event to print out added product
+    public void addProduct(javafx.event.ActionEvent actionEvent) {
+       System.out.println("Product added");
+    }
+    @FXML
+    //Creating an event handler to button click event to print out recorded Production
+    public void recordProduction(ActionEvent actionEvent) {
+        System.out.println("Production recorded");
+    }
 
-    public void initializeDataBase() {
+
+    public void initialize(){
+        connectToDatabase();
+    }
+
+    public void connectToDatabase() {
         final String JDBC_DRIVER = "org.h2.Driver";
         final String DB_URL = "jdbc:h2:./resources/H2PP";
 
@@ -48,24 +65,6 @@ public class Controller {
         }
     }
 
-    @FXML
-    private Label lblOutput;
-    @FXML
-    private Button addProduct, recordProduction;
 
-    public void sayHello() {
-        lblOutput.setText("Hello FXML!");
-
-    }
-
-    //Creating an event handler to button click event to print out added product
-    public void addProduct(javafx.event.ActionEvent actionEvent) {
-        System.out.println("Product added");
-    }
-
-    //Creating an event handler to button click event to print out recorded Production
-    public void recordProduction(ActionEvent actionEvent) {
-        System.out.println("Production recorded");
-    }
 }
 
