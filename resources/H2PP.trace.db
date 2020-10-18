@@ -1,0 +1,15 @@
+2020-10-18 15:12:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found; SQL statement:
+SELECT * FROM PRODUCT [42102-200]
+2020-10-18 15:16:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found; SQL statement:
+SELECT * FROM PRODUCT [42102-200]
+2020-10-18 15:28:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found; SQL statement:
+SELECT * FROM PRODUCT [42102-200]
+2020-10-18 15:34:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found; SQL statement:
+SELECT * FROM PRODUCT [42102-200]
+2020-10-18 15:36:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found; SQL statement:
+SELECT * FROM PRODUCT [42102-200]

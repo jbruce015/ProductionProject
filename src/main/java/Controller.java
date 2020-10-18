@@ -29,7 +29,7 @@ public class Controller {
 
     public void connectToDatabase() {
         final String JDBC_DRIVER = "org.h2.Driver";
-        final String DB_URL = "jdbc:h2:./resources/H2PP";
+        final String DB_URL = "jdbc:h2:./res/H2PP";
 
         //  Database credentials
         final String USER = "";
