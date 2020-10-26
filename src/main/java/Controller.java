@@ -15,7 +15,7 @@ public class Controller implements Initializable {
     private Button getProduct;
 
     @FXML
-    private ComboBox<String> typeBox;
+    private ComboBox<String> chooseQuantity;
 
     @FXML
     //Creating an event handler to button click event to print out added product
@@ -32,9 +32,9 @@ public class Controller implements Initializable {
     //Initialize method to populate choices in ComboBox
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        typeBox.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
-        typeBox.setEditable(true);
-        typeBox.getSelectionModel().selectFirst();
+        chooseQuantity.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
+        chooseQuantity.setEditable(true);
+        chooseQuantity.getSelectionModel().selectFirst();
     }
 
     public void initialize(){
